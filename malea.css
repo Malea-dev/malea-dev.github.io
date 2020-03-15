@@ -1,24 +1,41 @@
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 24px;
+
+    }
+
+    body {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    section {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 18px;
+    }
+}
+
 body {
-    font-size: 24px;
-    background-color: #00171F;
-    padding-top: 3rem;
+    background: #fdfdff;
+    padding-top: .2rem;
+    color: #13293d
 }
 
 .titre {
-    font-size: 2rem;
     text-align: center;
-    color: #FFFFFF;
 }
 
 .titre h1 {
+    font-size: 2.8rem;
     font-family: 'Cabin Condensed', sans-serif;
-}
-
-.titre * {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .titre h3 {
@@ -28,9 +45,65 @@ body {
     margin-top: .4rem;
 }
 
+.titre * {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .titre .ligne {
     height: 1px;
     background-color: #444;
-    width: 35%;
+    width: 100px;
     margin: auto;
+}
+
+blockquote {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: black;
+    background: #f9f9f9;
+    border-left: 8px solid #ccc;
+    border-radius: 5px;
+    margin: 1.5rem 10px;
+    padding: 0.5rem;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 2rem;
+    line-height: 0.1rem;
+    margin-right: .03rem;
+    /*vertical-align: 0rem;*/
+}
+
+blockquote .terme {
+    text-decoration: underline;
+}
+
+blockquote p {
+    display: inline;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h3 {
+    font-family: 'Cabin Condensed', sans-serif;
+    margin: 0 0 .4rem 0;
+}
+
+section p {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section a {
+    text-decoration: underline;
+    font-style: italic;
 }
